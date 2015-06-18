@@ -1,0 +1,66 @@
+@import "bourbon";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  //  禁止IOS弹出列表按钮
+  -webkit-touch-callout: none;
+
+  //  禁止IOS选中文字
+  -webkit-user-select: none;
+
+  -webkit-box-sizing: border-box;
+}
+Canvas{
+  background: #000000;
+}
+.mod-orient-layer {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 9997;
+  .mod-orient-layer__content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -113px;
+    text-align: center;
+  }
+}
+
+.wrapper {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  .sub-wrapper {
+    height: 100%;
+    overflow:auto;
+  }
+}
+
+.loading {
+  position: relative;
+  z-index: 9999;
+}
+
+.loading:after {
+//  content: url("../art/loading.gif");
+  content: "loading";
+  color:#ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -13px 0 0 -51px;
+  opacity: 0.8;
+}
+

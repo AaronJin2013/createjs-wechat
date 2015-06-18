@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta content="email=no" name="format-detection" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Bally Scribe</title>
+    <link type="text/css" rel="stylesheet" href="publish/styles/main.min.css">
+</head>
+<body>
+    <!--wechat image 350*350-->
+    <div style="display:none;" ><img src="" /></div>
+
+    <div class="wrapper">
+        <div class="sub-wrapper">
+            <div class="scroller">
+                <canvas id="Canvas" width="700" height="444"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <!--not mobile-->
+    <div class="unwatch">
+    </div>
+
+    <!--orientNotice-->
+    <div id="orientLayer" class="mod-orient-layer" style="display: none;">
+        <div class="mod-orient-layer__content mod-orient-layer__contentNew">
+            <!--
+            <i class="icon mod-orient-layer__icon-orient"></i>
+            <div class="mod-orient-layer__desc">please</div>
+            -->
+            <img  src="publish/images/turnmobile.png" />
+        </div>
+    </div>
+
+
+
+    <!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+    <script src="publish/scripts/lib.min.js"></script>
+    <script src="publish/scripts/main.min.js"></script>
+</body>
+</html>
